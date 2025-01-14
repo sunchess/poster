@@ -41,9 +41,9 @@ go run cmd/app/main.go --scope vk --limit 2 --post_gap 1800
 
 ## Command Line Arguments
 
-`--scope:` The platform to post to (`vk` or `youtube`). Default is vk.
-`--limit:` The number of posts to process in one run. Default is 2.
-`--post_gap:` The gap between posts in seconds. Default is 1800 (30 minutes).
+- `--scope:` The platform to post to (`vk` or `youtube`). Default is vk.
+- `--limit:` The number of posts to process in one run. Default is 2.
+- `--post_gap:` The gap between posts in seconds. Default is 1800 (30 minutes).
 
 ## Extending Functionality
 VK Poster is designed to be easily extendable. To add support for a new social network:
