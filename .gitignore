@@ -1,0 +1,4 @@
+.env
+cmd/app/token.json
+posts.db
+.vscode
