@@ -29,7 +29,7 @@ go mod tidy
 ```sh
 DB_PATH=your_database_path
 VK_API_TOKEN=your_vk_api_token
-YOUTUBE_API_KEY=your_youtube_api_key
+YOUTUBE_API_KEY=your_youtube_api_key.json
 ```
 ## Usage
 
@@ -60,6 +60,22 @@ Here is an example of how to run the application:
 
 This command will post to VK, processing up to 5 posts with a 1-hour gap between each post.
 
+## Credentials
+To set up posting videos to YouTube Shorts via the API, you need to use the YouTube Data API v3. This API allows you to upload videos, specify their settings, and metadata.
+
+Setup steps:
+
+### Create a project in `Google Cloud Console`:
+
+- Go to Google Cloud Console.
+- Create a new project.
+- Enable YouTube Data API v3 for this project.
+- Create credentials (OAuth 2.0 Client ID) to access the API.
+
+During the execution of the program, a link for authorization will appear in the console. The key obtained as a result of authorization needs to be inserted into the console.
+
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
+## License
+This project is licensed under the MIT License.
